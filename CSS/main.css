@@ -115,7 +115,7 @@ header {
 article.featured-access {
   grid-column: span 3;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
   border-bottom: 1px solid #bbc7c7;
