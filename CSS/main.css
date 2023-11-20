@@ -10,11 +10,13 @@ body {
   background: #d1dedd;
 }
 
+/* Viser ikke liste elementene*/
 ul, li{
   padding: 0;
   list-style-type: none;
 }
 
+/* Ligger til farge på overskrifter og tekst*/
 h1,h2,h3 {
   color: #222;
 }
@@ -22,6 +24,7 @@ p {
   color: #222;
 }
 
+/* Dette styler bredde og margin til kantene i griden*/
 header {
   max-width: 1200 px;
   margin: 40 px auto;
@@ -36,6 +39,7 @@ header {
   margin: 20px auto;
 }
 
+/* Her styles alle artiklene*/
 article.featured {
   grid-column: span 3;
   display: grid;
