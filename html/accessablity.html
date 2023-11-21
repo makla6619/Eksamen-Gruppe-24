@@ -7,53 +7,77 @@
     <link rel="stylesheet" href="../CSS/main.css" />
   </head>
   <body>
-    <header>
+    
       <h1>Oslo met</h1>
-    </header>
+    <!------------------ HEADER --------------------->
+    <!-- Section tags er brukt for et ryddigere oppsett, og for å indikere de forskjellige delene som siden er oppdelt i  -->
+    <section class="header">
+      <!-- Linkene til de andre sidene og logoen, er plassert i en nav tag -->
+      <nav>
+        
+          <!-- På denne siden har vi lagt linkene til de andre sidene på linje i en liste, i stedet for i en nedtrekksmeny -->
+          <div class="nav-links">
+            <!-- Linkene er plassert i en uordnet liste, som listeelementer -->
+            <ul>
+              <li>
+                <a href="../index.html">
+                  HJEM
+                </a>
+              </li>
+              <li>
+                <a href="p35.html">
+                  PILESTREDET-35
+                </a>
+              </li>
+              <li>
+                <a href="fake.html">
+                  FAKE NEWS
+                </a>
+              </li>
+            </ul>
+          </div>
+      </nav>
     <main class="grid-container-access">
       <article class="featured-access">
         <img
-          src="../img/OsloMET-EuroSign-skilt-med-lys-skilt-uten-lys-folie-11.jpg"
-          alt="featured image"
+          src="../img/Accessibility_test1_1.webp"
+          alt="Accessibility_test1_1"
         />
         <div>
-          <h2>Accessibility</h2>
+          <h2>Accessibility Desktop</h2>
           <p>
-            Jeg har valgt et enkelt design med en layout som gjentar seg på de
-            ulike nettsidene. Jeg har også brukt samme «header» og «footer» på
-            alle sidene. Det er tydelige linker til de ulike sidene gjennom
-            artiklene, og tydeliggjort hvilken side som er aktiv. Jeg har også
-            vært opptatt av å ha informative overskrifter som gjør det enkelt å
-            orientere seg på nettsiden. Jeg har ikke forventet forhåndskunnskap
-            av brukerene for å kunne ta i bruk nettsidene.
+            Første test ser ganske bra ut. Tilbakemelding
+på forbedringer er små skalering av bilder. Ellers blir det påpekt at det i noen tilfeller ikke er ekplisitt angitt bredde og høyde for bilder. Videre blir det påpekt at back/forward cache kan gjøre siden raskere. Det blir også påpekt at ikke alle linker er farget for å gjøre dem mer synlig. Det blir også påpekt at et dokument ikke har meta beskrivelse.
           </p>
         </div>
       </article>
       <article>
         <img src="../img/Trump-roper.jpg" alt="article img" />
         <div>
-          <h3>Fake news i den digitale era</h3>
+          <h3>Endringer gjort etter desktop-rapport</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            atque ratione dolorem enim laborum ducimus quae accusamus obcaecati
-            aut a.
+            Et bilde ble skalert ned. Ellers så virket siden som den skulle og ingen øvrige endringer ble gjort.
           </p>
         </div>
       </article>
       <article>
-        <img src="../img/HTML-Accessibility-2048x1536.jpg" />
+        <img src="../img/Accessibility_mobil.webp" />
         <div>
-          <h3>Accessibility</h3>
+          <h3>Accessibility Mobil</h3>
           <p>
-            Mye webinnhold kan gjøres tilgjengelig ved å gjøre at de riktige
-            HTML-elementene brukes for riktig formål til enhver tid.
+            Testen scorer dårlig på performance. Dette ser ut til som i tidligere tilfeller å skyldes skalering av bilder.
+            Igjen blir det nevnt at bilde elementer ikke har eksplisitt
+            bredde og høyde.
+            Så påpekes det at siden motvirker back/forward cache
+            restoration. Det påpekes at linker er avhengig av farge for å
+            ha kontrast til resten av siden.
           </p>
         </div>
       </article>
       <article>
-        <img src="../img/P35-2400-1200.jpg" />
+        <img src="../img/P35-2400-1200-1.webp" />
         <div>
-          <h3>P-35</h3>
+          <h3>Endringer gjort etter mobil rapport</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
             atque ratione dolorem enim laborum ducimus quae accusamus obcaecati
