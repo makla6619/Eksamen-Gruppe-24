@@ -7,9 +7,35 @@
     <link rel="stylesheet" href="../CSS/main.css" />
   </head>
   <body>
-    <header>
-      <h1>Pilestredet 35</h1>
-    </header>
+    <h1>Pilestredet-35</h1>
+    <!------------------ HEADER --------------------->
+    <!-- Section tags er brukt for et ryddigere oppsett, og for å indikere de forskjellige delene som siden er oppdelt i  -->
+    <section class="header">
+      <!-- Linkene til de andre sidene og logoen, er plassert i en nav tag -->
+      <nav>
+        
+          <!-- På denne siden har vi lagt linkene til de andre sidene på linje i en liste, i stedet for i en nedtrekksmeny -->
+          <div class="nav-links">
+            <!-- Linkene er plassert i en uordnet liste, som listeelementer -->
+            <ul>
+              <li>
+                <a href="../index.html">
+                  HJEM
+                </a>
+              </li>
+              <li>
+                <a href="accessablity.html">
+                  ACCESSABILITY
+                </a>
+              </li>
+              <li>
+                <a href="fake.html">
+                  FAKE NEWS
+                </a>
+              </li>
+            </ul>
+          </div>
+      </nav>
     <main class="grid-container-p35">
       <article class="featured-p35">
         <img
@@ -73,14 +99,21 @@
     </main>
     <div class="footer">
       <footer>
+        <!-- Link til kilden vi har hentet tekst og bilde fra  -->
         <p>
           All informasjon på denne siden er hentet fra
-          <a class="kildelink" href="https://www.oslomet.no/om/studiesteder"
-            >OsloMet våre studiesteder</a
+          <a
+            class="kildelink"
+            href="https://student.oslomet.no/
+            alt="link til siden hvor teksten på siden er hentet fra"
+            target="_blank"
           >
-          og Canvas.
+            Oslomet.no 
+          </a>
+
         </p>
-        <p class="forfattere">Forfatter er: Mads</p>
+        <p> og Canvas</p>
+        <!-- Hvorfor vi har laget siden -->
         <p class="eksamen">
           Laget til eksamen, høsten 2023 i faget DATA1200 ved OsloMet.
         </p>

@@ -10,10 +10,118 @@ body {
   background: #d1dedd;
 }
 
+
+
+/* styler linkene  inne i headeren*/
+nav {
+  display: flex;
+  /* Vertikal og horisontal padding */
+  padding: 2% 6%;
+  justify-content: space-between;
+}
+
+
+
+/* Linkene til de andre sidene */
+.nav-links {
+  flex: 1;
+  text-align: right;
+  font-family: 'Poppins';
+}
+
+/* Linkene er lagt i en uordnet liste som listeelementer */
+.nav-links ul li {
+  /* Sørger for at linkene ikke blir bullet points */ 
+  list-style: none;
+  /* Legger listeelementene etter hverandre i horisontal linje */
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+/* Hvordan linkene ser ut når man ikke har musepekeren over dem */
+.nav-links ul li a{
+  color: #0d0f0f;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Looken til linkene med en linje under når man holder musepekeren over dem */
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #131414;
+  display: block;
+  margin: auto;
+  /* Tiden det tar for linjen under linkene til å fylle lengden av hver link */
+  transition: .5s;
+}
+
+/* Linjen fyller hele lengden av linkene */
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
 /* Viser ikke liste elementene*/
 ul, li{
   padding: 0;
   list-style-type: none;
+}
+
+
+#links {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #0474bc;
+}
+
+/* =======================
+******* Mobile Menu ******
+========================*/
+.mobile-menu {
+  display: block;
+  list-style-type: none;
+  background-color: #fff;
+  float: right;
+  width: 150px;
+  padding: 5px 0 50px 0;
+  border: 1px solid #eee;
+  z-index: 55;
+}
+
+.mobile-links li {
+  line-height: 2.8rem;
+}
+
+.mobile-btn {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+  grid-auto-flow: column;
+  cursor: pointer;
+}
+
+.nav-list {
+  font-family: "Open Sans", sans-serif;
+  list-style-type: none;
+}
+
+.nav-list:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 /* Ligger til farge på overskrifter og tekst*/
@@ -23,6 +131,8 @@ h1,h2,h3 {
 p {
   color: #222;
 }
+
+
 
 /* Dette styler bredde og margin til kantene i griden*/
 header {
@@ -57,11 +167,29 @@ article img .grid-container, article.featured img {
   width: 100%;
   border: 4px solid #fff;
   border-radius: 8px;
+  object-fit: cover;
+  aspect-ratio: 16/9;
 }
 
 
 article p, article h3 {
   margin: 20px 10px;
+}
+
+/* Hvordan linkene ser ut når man holder musepekeren over linken */
+.original-image:hover {
+  font-weight: bolder;
+  cursor: pointer;
+  /* For å unngå default innstilling for linker, må den styles slik */
+  color: rgb(89, 88, 89);
+  text-decoration: none;
+}
+
+/* Hvordan linken ser ut når man klikker på den/når linken er 'besøkt' */
+.original-image:active,
+.original-image:visited {
+  color: rgb(89, 88, 89);
+  text-decoration: none;
 }
 
 /* responsive- for mobil */
@@ -74,7 +202,7 @@ article p, article h3 {
   align-items: center;
   }
 }
-
+/* responsive for skjermer under 980px */
 @media screen and (max-width: 760px) {
   article, article.featured {
     display: block;
@@ -300,6 +428,25 @@ article p, article h3 {
     display: block;
     margin: 0 20px;
   }
+}
+
+
+.footer{
+  text-align: center;
+  /*Vi ønsket å ha teksten i midten av footeren*/
+  padding: 8px;
+  /* Fargen er kopiert fra OsloMet.no */ 
+  background-image: linear-gradient(-90deg,  rgb(141, 222, 230));
+  color: black;
+  margin-top: 30px
+}
+
+
+
+/* Styler forklaringen av formålet med siden */
+.eksamen{
+  font-size: xx-small;
+  font-weight: lighter;
 }
 
 

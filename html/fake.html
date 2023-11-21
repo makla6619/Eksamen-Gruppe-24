@@ -7,14 +7,41 @@
     <link rel="stylesheet" href="../CSS/main.css" />
   </head>
   <body>
-    <header>
+    
       <h1>Fake news i den digitale era</h1>
-    </header>
+    <!------------------ HEADER --------------------->
+    <!-- Section tags er brukt for et ryddigere oppsett, og for å indikere de forskjellige delene som siden er oppdelt i  -->
+    <section class="header">
+      <!-- Linkene til de andre sidene og logoen, er plassert i en nav tag -->
+      <nav>
+        
+          <!-- På denne siden har vi lagt linkene til de andre sidene på linje i en liste, i stedet for i en nedtrekksmeny -->
+          <div class="nav-links">
+            <!-- Linkene er plassert i en uordnet liste, som listeelementer -->
+            <ul>
+              <li>
+                <a href="../index.html">
+                  HJEM
+                </a>
+              </li>
+              <li>
+                <a href="accessablity.html">
+                  ACCESSABILITY
+                </a>
+              </li>
+              <li>
+                <a href="p35.html">
+                  PILESTREDET-35
+                </a>
+              </li>
+            </ul>
+          </div>
+      </nav>
     <main class="grid-container-fake">
       <article class="featured">
         <img src="../img/Trump-roper-1.webp" alt="trump roper" />
         <div>
-          <h2>Introduksjon</h2>
+          <h2>AI og demokratiet</h2>
           <p>
             Med fremkomsten av digitale medier, er potensialet for falske
             nyheter og alternative fakta noe som har spredt seg. Det å skape
@@ -32,8 +59,16 @@
       <article>
         <img src="../img/8059-1.webp" alt="menneske vs robot" />
         <div>
+          <!-- I teksten har vi linket til en infoside: https://www.brennancenter.org/our-work/analysis-opinion/how-ai-puts-elections-risk-and-needed-safeguards-->
+                <!-- Når du klikker på linken tas du til en ny fane -->
+                <a class="ai og valg" 
+                  href="https://www.brennancenter.org/our-work/analysis-opinion/how-ai-puts-elections-risk-and-needed-safeguards"
+                  alt="Link til artikkel om hvordan AI kan påvirke valg"
+                  target="_blank">
           <h3>Demokratiet</h3>
+          </a>
           <p>
+            
             AI kan ha en etsende effekt på demokratiet, da feilinformasjon kan
             utvikle falske fortellinger, som kan ha potensial til å endre måten
             politisk kampanjer gjøres på, for eksempel ved å bruke AI-verktøy
@@ -43,6 +78,7 @@
             engasjere seg i den demokratiske debatten. Hvis bruken av AI er
             fullstendig forbudt, kan det være behov for personer innen IT-feltet
             for å operere systemer som oppdager ulovlig bruk av AI i kampanjene.
+            
           </p>
         </div>
       </article>
@@ -52,7 +88,14 @@
           alt="trump og mikrofon"
         />
         <div>
+          <!-- I teksten har vi linket til en infoside: https://www.nytimes.com/2023/06/25/technology/ai-elections-disinformation-guardrails.html-->
+                <!-- Når du klikker på linken tas du til en ny fane -->
+                <a class="ai og valg" 
+                  href="https://www.nytimes.com/2023/06/25/technology/ai-elections-disinformation-guardrails.html"
+                  alt="Link til artikkel om hvordan AI kan påvirke valg"
+                  target="_blank">
           <h3>Lovendring for å tillate AI under valgkamper</h3>
+          </a>
           <p>
             Siden AI både er lettere tilgjengelig og ganske billig, kan det være
             mulig for politiske partier å mikromålrette velgere. Med det kan de
@@ -73,7 +116,14 @@
       <article>
         <img src="../img/im-805529.jpg" />
         <div>
+          <!-- I teksten har vi linket til en infoside: https://www.researchgate.net/profile/Victoria-Rubin/publication/283721117_Misleading_Online_Content_Recognizing_Clickbait_as_False_News/links/5644c4b108ae54697fb813d1/Misleading-Online-Content-Recognizing-Clickbait-as-False-News.pdf-->
+                <!-- Når du klikker på linken tas du til en ny fane -->
+                <a class="ai og valg" 
+                  href="https://www.researchgate.net/profile/Victoria-Rubin/publication/283721117_Misleading_Online_Content_Recognizing_Clickbait_as_False_News/links/5644c4b108ae54697fb813d1/Misleading-Online-Content-Recognizing-Clickbait-as-False-News.pdf"
+                  alt="Link til artikkel om hvordan AI kan påvirke valg"
+                  target="_blank">
           <h3>Hva hvis vi ikke tillater en lovendring for AI</h3>
+          </a>
           <p>
             Det kan utilsiktet bremse utviklingen av KI i Norge. - Hvis
             regelverket er for vagt eller bredt til å være relevant, kan det
@@ -85,14 +135,21 @@
     </main>
     <div class="footer">
       <footer>
+        <!-- Link til kilden vi har hentet tekst og bilde fra  -->
         <p>
           All informasjon på denne siden er hentet fra
-          <a class="kildelink" href="https://www.oslomet.no/om/studiesteder"
-            >OsloMet våre studiesteder</a
+          <a
+            class="kildelink"
+            href="https://student.oslomet.no/
+            alt="link til siden hvor teksten på siden er hentet fra"
+            target="_blank"
           >
-          og Canvas.
+            Oslomet.no 
+          </a>
+
         </p>
-        <p class="forfattere">Forfatter er: Mads</p>
+        <p> og Canvas</p>
+        <!-- Hvorfor vi har laget siden -->
         <p class="eksamen">
           Laget til eksamen, høsten 2023 i faget DATA1200 ved OsloMet.
         </p>
